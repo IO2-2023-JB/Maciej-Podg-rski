@@ -12,7 +12,7 @@ namespace lab1_IO2
 
         public static double Add(string s)
         {
-            List<string> delimiterList = new List<string>() { ",", "\n" };
+            List<char> delimiterList = new List<char>() { ',', '\n' };
             if (s == null || s.Length == 0)
                 return 0;
             if (s.StartsWith("\\\\"))
