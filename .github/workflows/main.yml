@@ -6,9 +6,14 @@ on:
   pull_request:
     branches: [ "main" ]
 
+
+
 jobs:
   build:
-
+    defaults:
+      run:
+        shell: bash
+        working-directory: lab1_IO2
     runs-on: ubuntu-latest
 
     steps:
